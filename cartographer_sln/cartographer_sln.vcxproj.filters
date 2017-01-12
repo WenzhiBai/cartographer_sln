@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cartographer">
+      <UniqueIdentifier>{7fdd4068-3619-4266-a062-de83358989f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="configuration_files">
+      <UniqueIdentifier>{040e81d3-102e-41c7-8393-1e7e3976f2ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\common">
+      <UniqueIdentifier>{c54efc39-bd03-467b-bce7-510c5621f5c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\kalman_filter">
+      <UniqueIdentifier>{6fde2fc8-f390-4ce2-8139-70fddb2c00d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping">
+      <UniqueIdentifier>{ea20821b-cce4-4850-b0c2-e30e3f20f16c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping_2d">
+      <UniqueIdentifier>{067313f3-02f5-481c-830c-6e61d1053c56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\sensor">
+      <UniqueIdentifier>{52574c53-eda9-4dd6-bc32-40cf4be42433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\transform">
+      <UniqueIdentifier>{eb13443c-944b-4891-90b2-e7b4accf48f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\common\proto">
+      <UniqueIdentifier>{89b1cdbd-fb80-4b83-b26a-21fbb0a83a7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\kalman_filter\proto">
+      <UniqueIdentifier>{85cce29e-d8c7-4533-9b64-f5b3e83d2a3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping\proto">
+      <UniqueIdentifier>{db10d470-451c-4c1a-854b-7d8ffe94c081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping\sparse_pose_graph">
+      <UniqueIdentifier>{de9576df-5861-4f1a-9e31-4ddf0761795a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping\sparse_pose_graph\proto">
+      <UniqueIdentifier>{c77b6422-c5cf-4706-812d-7ac1423a9b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping_2d\proto">
+      <UniqueIdentifier>{32199e16-8c2b-4b4d-9a31-01d7d39b40e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping_2d\scan_matching">
+      <UniqueIdentifier>{956d44af-2cfa-429c-b0d5-a72b9b267542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping_2d\sparse_pose_graph">
+      <UniqueIdentifier>{65f1e210-e56c-496d-aa1f-62a04c88167c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping_2d\scan_matching\proto">
+      <UniqueIdentifier>{1d515439-61c4-4052-8797-fa15b6af9e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\sensor\proto">
+      <UniqueIdentifier>{cc1073a9-d112-4b85-be17-413c1eb54ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\transform\proto">
+      <UniqueIdentifier>{0617afc8-d6b7-4963-a11a-7019418d8211}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="configuration_files\map_builder.lua">
+      <Filter>configuration_files</Filter>
+    </None>
+    <None Include="configuration_files\revo_lds.lua">
+      <Filter>configuration_files</Filter>
+    </None>
+    <None Include="configuration_files\sparse_pose_graph.lua">
+      <Filter>configuration_files</Filter>
+    </None>
+    <None Include="configuration_files\trajectory_builder_2d.lua">
+      <Filter>configuration_files</Filter>
+    </None>
+    <None Include="cartographer\common\proto\ceres_solver_options.proto">
+      <Filter>cartographer\common\proto</Filter>
+    </None>
+    <None Include="cartographer\kalman_filter\proto\pose_tracker_options.proto">
+      <Filter>cartographer\kalman_filter\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping\proto\map_builder_options.proto">
+      <Filter>cartographer\mapping\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping\proto\scan_matching_progress.proto">
+      <Filter>cartographer\mapping\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping\proto\sparse_pose_graph.proto">
+      <Filter>cartographer\mapping\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping\proto\sparse_pose_graph_options.proto">
+      <Filter>cartographer\mapping\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping\proto\submap_visualization.proto">
+      <Filter>cartographer\mapping\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping\proto\trajectory.proto">
+      <Filter>cartographer\mapping\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping\proto\trajectory_connectivity.proto">
+      <Filter>cartographer\mapping\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.proto">
+      <Filter>cartographer\mapping\sparse_pose_graph\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.proto">
+      <Filter>cartographer\mapping\sparse_pose_graph\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_2d\proto\laser_fan_inserter_options.proto">
+      <Filter>cartographer\mapping_2d\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_2d\proto\local_trajectory_builder_options.proto">
+      <Filter>cartographer\mapping_2d\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_2d\proto\submaps_options.proto">
+      <Filter>cartographer\mapping_2d\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.proto">
+      <Filter>cartographer\mapping_2d\scan_matching\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.proto">
+      <Filter>cartographer\mapping_2d\scan_matching\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.proto">
+      <Filter>cartographer\mapping_2d\scan_matching\proto</Filter>
+    </None>
+    <None Include="cartographer\sensor\proto\adaptive_voxel_filter_options.proto">
+      <Filter>cartographer\sensor\proto</Filter>
+    </None>
+    <None Include="cartographer\sensor\proto\configuration.proto">
+      <Filter>cartographer\sensor\proto</Filter>
+    </None>
+    <None Include="cartographer\sensor\proto\sensor.proto">
+      <Filter>cartographer\sensor\proto</Filter>
+    </None>
+    <None Include="cartographer\transform\proto\transform.proto">
+      <Filter>cartographer\transform\proto</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cartographer\common\blocking_queue.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\ceres_solver_options.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\configuration_file_resolver.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\fixed_ratio_sampler.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\histogram.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\interval.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\lua.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\lua_parameter_dictionary.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\make_unique.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\math.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\mutex.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\port.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\rate_timer.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\thread_pool.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\time.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\kalman_filter\gaussian_distribution.h">
+      <Filter>cartographer\kalman_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\kalman_filter\pose_tracker.h">
+      <Filter>cartographer\kalman_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\kalman_filter\unscented_kalman_filter.h">
+      <Filter>cartographer\kalman_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\collated_trajectory_builder.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\detect_floors.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\global_trajectory_builder_interface.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\imu_tracker.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\map_builder.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\odometry_state_tracker.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\probability_values.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\sparse_pose_graph.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\submaps.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\trajectory_builder.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\trajectory_connectivity.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\trajectory_node.h">
+      <Filter>cartographer\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\sparse_pose_graph\constraint_builder.h">
+      <Filter>cartographer\mapping\sparse_pose_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\sparse_pose_graph\optimization_problem_options.h">
+      <Filter>cartographer\mapping\sparse_pose_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\global_trajectory_builder.h">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\laser_fan_inserter.h">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\local_trajectory_builder.h">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\map_limits.h">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\probability_grid.h">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\ray_casting.h">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\sparse_pose_graph.h">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\submaps.h">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\xy_index.h">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\ceres_scan_matcher.h">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\correlative_scan_matcher.h">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\fast_correlative_scan_matcher.h">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\fast_global_localizer.h">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\occupied_space_cost_functor.h">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\real_time_correlative_scan_matcher.h">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\rotation_delta_cost_functor.h">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\translation_delta_cost_functor.h">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\sparse_pose_graph\constraint_builder.h">
+      <Filter>cartographer\mapping_2d\sparse_pose_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\sparse_pose_graph\optimization_problem.h">
+      <Filter>cartographer\mapping_2d\sparse_pose_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\sparse_pose_graph\spa_cost_function.h">
+      <Filter>cartographer\mapping_2d\sparse_pose_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\collator.h">
+      <Filter>cartographer\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\compressed_point_cloud.h">
+      <Filter>cartographer\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\configuration.h">
+      <Filter>cartographer\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\data.h">
+      <Filter>cartographer\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\laser.h">
+      <Filter>cartographer\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\ordered_multi_queue.h">
+      <Filter>cartographer\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\point_cloud.h">
+      <Filter>cartographer\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\voxel_filter.h">
+      <Filter>cartographer\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\transform\rigid_transform.h">
+      <Filter>cartographer\transform</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\transform\transform.h">
+      <Filter>cartographer\transform</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\transform\transform_interpolation_buffer.h">
+      <Filter>cartographer\transform</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\common\proto\ceres_solver_options.pb.h">
+      <Filter>cartographer\common\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\kalman_filter\proto\pose_tracker_options.pb.h">
+      <Filter>cartographer\kalman_filter\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\proto\map_builder_options.pb.h">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\proto\scan_matching_progress.pb.h">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\proto\sparse_pose_graph.pb.h">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\proto\sparse_pose_graph_options.pb.h">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\proto\submap_visualization.pb.h">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\proto\trajectory.pb.h">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\proto\trajectory_connectivity.pb.h">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.pb.h">
+      <Filter>cartographer\mapping\sparse_pose_graph\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.pb.h">
+      <Filter>cartographer\mapping\sparse_pose_graph\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\proto\laser_fan_inserter_options.pb.h">
+      <Filter>cartographer\mapping_2d\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\proto\local_trajectory_builder_options.pb.h">
+      <Filter>cartographer\mapping_2d\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\proto\submaps_options.pb.h">
+      <Filter>cartographer\mapping_2d\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.pb.h">
+      <Filter>cartographer\mapping_2d\scan_matching\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.h">
+      <Filter>cartographer\mapping_2d\scan_matching\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.pb.h">
+      <Filter>cartographer\mapping_2d\scan_matching\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\proto\adaptive_voxel_filter_options.pb.h">
+      <Filter>cartographer\sensor\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\proto\configuration.pb.h">
+      <Filter>cartographer\sensor\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\sensor\proto\sensor.pb.h">
+      <Filter>cartographer\sensor\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\transform\proto\transform.pb.h">
+      <Filter>cartographer\transform\proto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cartographer\common\ceres_solver_options.cc">
+      <Filter>cartographer\common</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\common\configuration_file_resolver.cc">
+      <Filter>cartographer\common</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\common\fixed_ratio_sampler.cc">
+      <Filter>cartographer\common</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\common\histogram.cc">
+      <Filter>cartographer\common</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\common\lua_parameter_dictionary.cc">
+      <Filter>cartographer\common</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\common\thread_pool.cc">
+      <Filter>cartographer\common</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\common\time.cc">
+      <Filter>cartographer\common</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\kalman_filter\pose_tracker.cc">
+      <Filter>cartographer\kalman_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\collated_trajectory_builder.cc">
+      <Filter>cartographer\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\detect_floors.cc">
+      <Filter>cartographer\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\imu_tracker.cc">
+      <Filter>cartographer\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\map_builder.cc">
+      <Filter>cartographer\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\odometry_state_tracker.cc">
+      <Filter>cartographer\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\probability_values.cc">
+      <Filter>cartographer\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\sparse_pose_graph.cc">
+      <Filter>cartographer\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\submaps.cc">
+      <Filter>cartographer\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\trajectory_connectivity.cc">
+      <Filter>cartographer\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\trajectory_node.cc">
+      <Filter>cartographer\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\sparse_pose_graph\constraint_builder.cc">
+      <Filter>cartographer\mapping\sparse_pose_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\sparse_pose_graph\optimization_problem_options.cc">
+      <Filter>cartographer\mapping\sparse_pose_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\global_trajectory_builder.cc">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\laser_fan_inserter.cc">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\local_trajectory_builder.cc">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\ray_casting.cc">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\sparse_pose_graph.cc">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\submaps.cc">
+      <Filter>cartographer\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\scan_matching\ceres_scan_matcher.cc">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\scan_matching\correlative_scan_matcher.cc">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\scan_matching\fast_correlative_scan_matcher.cc">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\scan_matching\fast_global_localizer.cc">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\scan_matching\real_time_correlative_scan_matcher.cc">
+      <Filter>cartographer\mapping_2d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\sparse_pose_graph\constraint_builder.cc">
+      <Filter>cartographer\mapping_2d\sparse_pose_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\sparse_pose_graph\optimization_problem.cc">
+      <Filter>cartographer\mapping_2d\sparse_pose_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\sensor\collator.cc">
+      <Filter>cartographer\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\sensor\compressed_point_cloud.cc">
+      <Filter>cartographer\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\sensor\configuration.cc">
+      <Filter>cartographer\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\sensor\laser.cc">
+      <Filter>cartographer\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\sensor\ordered_multi_queue.cc">
+      <Filter>cartographer\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\sensor\point_cloud.cc">
+      <Filter>cartographer\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\sensor\voxel_filter.cc">
+      <Filter>cartographer\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\transform\rigid_transform.cc">
+      <Filter>cartographer\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\transform\transform.cc">
+      <Filter>cartographer\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\transform\transform_interpolation_buffer.cc">
+      <Filter>cartographer\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\common\proto\ceres_solver_options.pb.cc">
+      <Filter>cartographer\common\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\kalman_filter\proto\pose_tracker_options.pb.cc">
+      <Filter>cartographer\kalman_filter\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\proto\map_builder_options.pb.cc">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\proto\scan_matching_progress.pb.cc">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\proto\sparse_pose_graph.pb.cc">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\proto\sparse_pose_graph_options.pb.cc">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\proto\submap_visualization.pb.cc">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\proto\trajectory.pb.cc">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\proto\trajectory_connectivity.pb.cc">
+      <Filter>cartographer\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.pb.cc">
+      <Filter>cartographer\mapping\sparse_pose_graph\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.pb.cc">
+      <Filter>cartographer\mapping\sparse_pose_graph\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\proto\laser_fan_inserter_options.pb.cc">
+      <Filter>cartographer\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\proto\local_trajectory_builder_options.pb.cc">
+      <Filter>cartographer\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\proto\submaps_options.pb.cc">
+      <Filter>cartographer\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.pb.cc">
+      <Filter>cartographer\mapping_2d\scan_matching\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.cc">
+      <Filter>cartographer\mapping_2d\scan_matching\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.pb.cc">
+      <Filter>cartographer\mapping_2d\scan_matching\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\sensor\proto\adaptive_voxel_filter_options.pb.cc">
+      <Filter>cartographer\sensor\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\sensor\proto\configuration.pb.cc">
+      <Filter>cartographer\sensor\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\sensor\proto\sensor.pb.cc">
+      <Filter>cartographer\sensor\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\transform\proto\transform.pb.cc">
+      <Filter>cartographer\transform\proto</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
