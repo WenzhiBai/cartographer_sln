@@ -58,6 +58,21 @@
     <Filter Include="cartographer\transform\proto">
       <UniqueIdentifier>{0617afc8-d6b7-4963-a11a-7019418d8211}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cartographer\mapping_3d">
+      <UniqueIdentifier>{2f0d4f0d-3d94-4b93-8180-208b2f076f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping_3d\proto">
+      <UniqueIdentifier>{6b037757-20c6-4231-9926-287aafa16777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping_3d\scan_matching">
+      <UniqueIdentifier>{78956443-6ad2-4595-9d6a-11d4277a4db6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping_3d\sparse_pose_graph">
+      <UniqueIdentifier>{124716ec-2716-4154-b604-4e60891027af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cartographer\mapping_3d\scan_matching\proto">
+      <UniqueIdentifier>{81092321-ba8a-4820-8a91-bb15212a086b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="configuration_files\map_builder.lua">
@@ -134,6 +149,30 @@
     </None>
     <None Include="cartographer\transform\proto\transform.proto">
       <Filter>cartographer\transform\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_3d\proto\kalman_local_trajectory_builder_options.proto">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_3d\proto\laser_fan_inserter_options.proto">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_3d\proto\local_trajectory_builder_options.proto">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_3d\proto\motion_filter_options.proto">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_3d\proto\optimizing_local_trajectory_builder_options.proto">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_3d\proto\submaps_options.proto">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_3d\scan_matching\proto\ceres_scan_matcher_options.proto">
+      <Filter>cartographer\mapping_3d\scan_matching\proto</Filter>
+    </None>
+    <None Include="cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.proto">
+      <Filter>cartographer\mapping_3d\scan_matching\proto</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -389,6 +428,120 @@
     <ClInclude Include="cartographer\transform\proto\transform.pb.h">
       <Filter>cartographer\transform\proto</Filter>
     </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\acceleration_cost_function.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\ceres_pose.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\global_trajectory_builder.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\hybrid_grid.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\imu_integration.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\kalman_local_trajectory_builder.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\kalman_local_trajectory_builder_options.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\laser_fan_inserter.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\local_trajectory_builder.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\local_trajectory_builder_interface.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\local_trajectory_builder_options.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\motion_filter.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\optimizing_local_trajectory_builder.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\optimizing_local_trajectory_builder_options.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\rotation_cost_function.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\sparse_pose_graph.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\submaps.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\translation_cost_function.h">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\ceres_scan_matcher.h">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\fast_correlative_scan_matcher.h">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\interpolated_grid.h">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\occupied_space_cost_functor.h">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\precomputation_grid.h">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\real_time_correlative_scan_matcher.h">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\rotation_delta_cost_functor.h">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\rotational_scan_matcher.h">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\translation_delta_cost_functor.h">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\sparse_pose_graph\constraint_builder.h">
+      <Filter>cartographer\mapping_3d\sparse_pose_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\sparse_pose_graph\optimization_problem.h">
+      <Filter>cartographer\mapping_3d\sparse_pose_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\sparse_pose_graph\spa_cost_function.h">
+      <Filter>cartographer\mapping_3d\sparse_pose_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\proto\kalman_local_trajectory_builder_options.pb.h">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\proto\laser_fan_inserter_options.pb.h">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\proto\local_trajectory_builder_options.pb.h">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\proto\motion_filter_options.pb.h">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\proto\optimizing_local_trajectory_builder_options.pb.h">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\proto\submaps_options.pb.h">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\proto\ceres_scan_matcher_options.pb.h">
+      <Filter>cartographer\mapping_3d\scan_matching\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.h">
+      <Filter>cartographer\mapping_3d\scan_matching\proto</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cartographer\common\ceres_solver_options.cc">
@@ -582,6 +735,90 @@
     </ClCompile>
     <ClCompile Include="cartographer\transform\proto\transform.pb.cc">
       <Filter>cartographer\transform\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\ceres_pose.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\global_trajectory_builder.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\imu_integration.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\kalman_local_trajectory_builder.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\kalman_local_trajectory_builder_options.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\laser_fan_inserter.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\local_trajectory_builder.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\local_trajectory_builder_options.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\motion_filter.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\optimizing_local_trajectory_builder.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\optimizing_local_trajectory_builder_options.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\sparse_pose_graph.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\submaps.cc">
+      <Filter>cartographer\mapping_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\scan_matching\ceres_scan_matcher.cc">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\scan_matching\fast_correlative_scan_matcher.cc">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\scan_matching\precomputation_grid.cc">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\scan_matching\real_time_correlative_scan_matcher.cc">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\scan_matching\rotational_scan_matcher.cc">
+      <Filter>cartographer\mapping_3d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\sparse_pose_graph\constraint_builder.cc">
+      <Filter>cartographer\mapping_3d\sparse_pose_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\sparse_pose_graph\optimization_problem.cc">
+      <Filter>cartographer\mapping_3d\sparse_pose_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\proto\kalman_local_trajectory_builder_options.pb.cc">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\proto\laser_fan_inserter_options.pb.cc">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\proto\local_trajectory_builder_options.pb.cc">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\proto\motion_filter_options.pb.cc">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\proto\optimizing_local_trajectory_builder_options.pb.cc">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\proto\submaps_options.pb.cc">
+      <Filter>cartographer\mapping_3d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\scan_matching\proto\ceres_scan_matcher_options.pb.cc">
+      <Filter>cartographer\mapping_3d\scan_matching\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.cc">
+      <Filter>cartographer\mapping_3d\scan_matching\proto</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
