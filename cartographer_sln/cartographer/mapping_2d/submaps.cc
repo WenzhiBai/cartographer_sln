@@ -26,44 +26,47 @@
 #include "cartographer/common/make_unique.h"
 #include "cartographer/common/port.h"
 #include "glog/logging.h"
-#include "webp/encode.h"
+
+ /*柏文治，为了去掉webp依赖库*/
+//#include "webp/encode.h"
 
 namespace cartographer {
 namespace mapping_2d {
 
-namespace {
-
-void WriteDebugImage(const string& filename,
-                     const ProbabilityGrid& probability_grid) {
-  constexpr int kUnknown = 128;
-  const mapping_2d::CellLimits& cell_limits =
-      probability_grid.limits().cell_limits();
-  const int width = cell_limits.num_x_cells;
-  const int height = cell_limits.num_y_cells;
-  std::vector<uint8_t> rgb;
-  for (const Eigen::Array2i& xy_index : mapping_2d::XYIndexRangeIterator(
-           probability_grid.limits().cell_limits())) {
-    CHECK(probability_grid.limits().Contains(xy_index));
-    const uint8_t value =
-        probability_grid.IsKnown(xy_index)
-            ? common::RoundToInt(
-                  (1. - probability_grid.GetProbability(xy_index)) * 255 + 0)
-            : kUnknown;
-    rgb.push_back(value);
-    rgb.push_back(value);
-    rgb.push_back(value);
-  }
-  uint8_t* output = nullptr;
-  size_t output_size =
-      WebPEncodeLosslessRGB(rgb.data(), width, height, 3 * width, &output);
-  std::unique_ptr<uint8_t, void (*)(void*)> output_deleter(output, std::free);
-  std::ofstream output_file(filename, std::ios::out | std::ios::binary);
-  output_file.write(reinterpret_cast<char*>(output), output_size);
-  output_file.close();
-  CHECK(output_file) << "Writing " << filename << " failed.";
-}
-
-}  // namespace
+/*柏文治，为了去掉webp依赖库*/
+//namespace {
+//
+//void WriteDebugImage(const string& filename,
+//                     const ProbabilityGrid& probability_grid) {
+//  constexpr int kUnknown = 128;
+//  const mapping_2d::CellLimits& cell_limits =
+//      probability_grid.limits().cell_limits();
+//  const int width = cell_limits.num_x_cells;
+//  const int height = cell_limits.num_y_cells;
+//  std::vector<uint8_t> rgb;
+//  for (const Eigen::Array2i& xy_index : mapping_2d::XYIndexRangeIterator(
+//           probability_grid.limits().cell_limits())) {
+//    CHECK(probability_grid.limits().Contains(xy_index));
+//    const uint8_t value =
+//        probability_grid.IsKnown(xy_index)
+//            ? common::RoundToInt(
+//                  (1. - probability_grid.GetProbability(xy_index)) * 255 + 0)
+//            : kUnknown;
+//    rgb.push_back(value);
+//    rgb.push_back(value);
+//    rgb.push_back(value);
+//  }
+//  uint8_t* output = nullptr;
+//  size_t output_size =
+//      WebPEncodeLosslessRGB(rgb.data(), width, height, 3 * width, &output);
+//  std::unique_ptr<uint8_t, void (*)(void*)> output_deleter(output, std::free);
+//  std::ofstream output_file(filename, std::ios::out | std::ios::binary);
+//  output_file.write(reinterpret_cast<char*>(output), output_size);
+//  output_file.close();
+//  CHECK(output_file) << "Writing " << filename << " failed.";
+//}
+//
+//}  // namespace
 
 ProbabilityGrid ComputeCroppedProbabilityGrid(
     const ProbabilityGrid& probability_grid) {
@@ -155,8 +158,9 @@ void Submaps::FinishSubmap(int index) {
   submap->finished_probability_grid = &submap->probability_grid;
   if (options_.output_debug_images()) {
     // Output the Submap that won't be changed from now on.
-    WriteDebugImage("submap" + std::to_string(index) + ".webp",
-                    submap->probability_grid);
+	/*柏文治，为了去掉webp依赖库*/
+    //WriteDebugImage("submap" + std::to_string(index) + ".webp",
+    //                submap->probability_grid);
   }
 }
 
