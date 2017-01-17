@@ -272,7 +272,10 @@ void Submaps::SubmapToProto(
       width, height, min_index, max_index, voxel_indices_and_probabilities);
   const string cell_data = ComputePixelValues(accumulated_pixel_data);
 
-  common::FastGzipString(cell_data, response->mutable_cells());
+  /*柏文治，为了去掉boost依赖库*/
+  //common::FastGzipString(cell_data, response->mutable_cells());
+  *response->mutable_cells() = cell_data;
+
   *response->mutable_slice_pose() =
       transform::ToProto(global_submap_pose.inverse() *
                          transform::Rigid3d::Translation(Eigen::Vector3d(

@@ -74,7 +74,10 @@ void Submaps::AddProbabilityGridToResponse(
       cells.push_back(0);                                    // alpha
     }
   }
-  common::FastGzipString(cells, response->mutable_cells());
+
+  /*柏文治，为了去掉boost依赖库*/
+  //common::FastGzipString(cells, response->mutable_cells());
+  *response->mutable_cells() = cells;
 
   response->set_width(limits.num_x_cells);
   response->set_height(limits.num_y_cells);

@@ -542,6 +542,9 @@
     <ClInclude Include="cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.h">
       <Filter>cartographer\mapping_3d\scan_matching\proto</Filter>
     </ClInclude>
+    <ClInclude Include="cartographer\common\config.h">
+      <Filter>cartographer\common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cartographer\common\ceres_solver_options.cc">

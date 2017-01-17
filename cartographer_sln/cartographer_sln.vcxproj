@@ -82,11 +82,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\cartographer_sln</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\cartographer_sln;..\include\lua</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>..\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libprotobuf.lib;libprotobuf-lite.lib;libprotoc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib\Debug\glog;..\lib\Debug\boost;..\lib\Debug\lua;..\lib\Debug\protobuf;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libglog_static.lib;libglog.lib;libboost_iostreams-vc140-mt-gd-1_63.lib;libprotobuf.lib;libprotobuf-lite.lib;libprotoc.lib;lua52.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="cartographer\common\blocking_queue.h" />
     <ClInclude Include="cartographer\common\ceres_solver_options.h" />
+    <ClInclude Include="cartographer\common\config.h" />
     <ClInclude Include="cartographer\common\configuration_file_resolver.h" />
     <ClInclude Include="cartographer\common\fixed_ratio_sampler.h" />
     <ClInclude Include="cartographer\common\histogram.h" />
